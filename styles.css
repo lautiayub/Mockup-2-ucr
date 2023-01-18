@@ -1,0 +1,253 @@
+:root{
+    rgb(134, 58, 111)
+    rgb(151, 92, 141)
+    rgb(217, 137, 181)
+    rgb(255, 173, 188)
+    font-family: "Work Sans";} 
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif; /*no funciona todavia*/
+    background: url(https://i.pinimg.com/originals/b0/e9/89/b0e989af1088601baf801b758b4d3cb8.png);
+    /* background: rgb(255, 255, 255); */
+    background-size:contain;
+    background-position:center;
+    height: 100vh;
+}
+/*nav*/
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    /* background: linear-gradient(rgba(5,7,12,0.8),rgba(5,7,12,0.8)); */
+    background: rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    border-bottom: 1px solid #fff;
+    
+    
+}
+
+.navbar-left{
+    display: flex;
+    align-items: center;
+}
+#img_logo_nav {
+    width:40px;
+    height: 40px;
+    padding:20px;
+    float: left;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    height: 80px;
+    
+}
+.navbar-left li a{
+    text-decoration: none;
+    padding:20px;
+    color: white;
+}
+.navbar-left li a:hover{
+    background:rgba(255, 255, 255, 0.5);
+    border-radius: 2px;
+    color: rgb(61, 45, 45);
+}
+
+.navbar-right {
+    display: flex; 
+    align-items: center;
+    margin-right: 25px; 
+    
+}
+
+.navbar-right a{
+    text-decoration: none;
+    color: white;
+    padding: 7px;
+    transition: 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+/*efectos*/
+.navbar-right a:hover{
+    border: 1px solid white;
+    border-radius:9px;
+    padding: 12px;
+    transition: 0.5s;
+    transition-delay:1.05s ;
+    
+}
+
+.navbar-right a span{
+    position: absolute;
+    display: block;
+}
+#efectoT{
+    top:0;
+    
+    left:-100%;
+    width: 100%;
+    height: 2px;
+    background:linear-gradient(90deg,transparent, white);
+    
+}
+.navbar-right a:hover #efectoT{
+    left: 100%;
+    transition: 1s;
+    
+    
+}
+
+
+#efectoR{
+    right:0;
+    
+    top:-100%;
+    height: 100%;
+    width: 2px;
+    background:linear-gradient(180deg,transparent, white);
+    
+}
+.navbar-right a:hover #efectoR{
+    top:100%;
+    transition: 0.8s;
+    transition-delay: 0.25s;
+    
+}
+
+#efectoB{
+    bottom:0;
+    
+    right:-100%;
+    width: 100%;
+    height: 2px;
+    background:linear-gradient(270deg,transparent, white);
+    
+}
+.navbar-right a:hover #efectoB{
+    right:100%;
+    transition: 0.8s;
+    transition-delay: 0.5s;
+    
+}
+
+#efectoL{
+    left:0;
+    
+    bottom:-100%;
+    height: 100%;
+    width: 2px;
+    background:linear-gradient(360deg,transparent, white);
+    
+}
+.navbar-right a:hover #efectoL{
+    bottom:100%;
+    transition: 0.8s;
+    transition-delay: 0.75s;
+    
+}
+
+/*cards*/
+
+.activities-section{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 180px 0 0 0;
+    padding: 0;
+    background: rgb(134, 58, 111,0.3);
+
+}
+.activities-section h1{
+margin: 0;
+margin-bottom: 18px;
+color: #fff;
+font-size: 30px;
+letter-spacing: 0.2em;
+font-family: "Work Sans";
+text-transform: uppercase;
+
+}
+.grid-activities{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    width: 780px;
+    height: 500px;
+
+}
+.activities-cards{
+    align-items: center;
+    text-align: center;
+}
+.activities-cards p{
+    color: #fff;
+}
+.activities-cards img{
+    width: 180px;
+    height: 130px;
+}
+.activities-cards:hover img{
+    width: 190px;
+    height: 140px;
+    transition: 0.2s;
+}
+.activities-cards button{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    border: none;
+    font-family: "Work Sans";
+    color: rgb(253, 235, 249);
+    text-transform: uppercase;
+    font-weight: 500;
+	letter-spacing: 0.04em;
+    cursor: pointer;
+}
+.activities-cards button:hover{
+    padding: 2px;
+    background: rgba(255, 255, 255, 0.5);
+    transition: 0.2s;
+}
+/*info*/
+.info-container{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    padding:0;
+    margin: 0;
+    background:  rgb(151, 92, 141,0.97);
+    justify-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.info{
+    width: 30%;
+    align-self: center;
+}
+.info h1{
+    font-size: 2rem;
+    line-height: 1.2;
+    font-family: "Work Sans";
+    text-transform: uppercase;
+}
+.info p{
+     font-size: 1rem;
+        line-height: 1.2;
+        font-family: "Work Sans";
+        text-transform: uppercase;
+    }
+
+footer{
+    background: #3C415C;
+    width: 100%;
+    height: 300px;
+}
