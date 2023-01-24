@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+/* font-family: 'Raleway', sans-serif;  */
+@import url('https://fonts.cdnfonts.com/css/gotham-rounded');
+/* font-family: 'Gotham Rounded', sans-serif; */
+                                              
+
+body {
+width: 100vh;
+  height: 100%;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+}
+body::after {
+  content: "";
+   background: url(https://salta4400.com/wp-content/uploads/2019/05/radi-sii-2048x1288.jpg);
+   background-size:cover;
+   background-position:top ;
+  opacity: 0.6;
+   top: -200px;
+  left: 0;
+  bottom: 0;
+   right: 0; 
+   position: absolute;
+    z-index: -1;}
+
+/*nav*/
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+  background: rgb(34, 119, 186, 0.95);
+  box-sizing: border-box;
+  border-bottom: 1px solid #fff;
+}
+
+.navbar-left{
+  display: flex;
+  align-items: center;
+}
+#img_logo_nav {
+  width:56px;
+  height: 54px;
+  margin: 0 0 0px 5px;
+}
+nav ul{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  height: 80px;
+
+}
+.navbar-left li a{
+  text-decoration: none;
+  padding:20px;
+  color: white;
+}
+.navbar-left li a:hover{
+  background:rgba(255, 255, 255, 0.5);
+  border-radius: 2px;
+  color: rgb(61, 45, 45);
+}
+
+.navbar-right {
+  display: flex; 
+  align-items: center;
+  margin-right: 25px; 
+
+}
+
+.navbar-right a{
+  text-decoration: none;
+  color: white;
+  padding: 7px;
+  transition: 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+/*efectos*/
+.navbar-right a:hover{
+  border: 1px solid white;
+  border-radius:9px;
+  padding: 12px;
+  transition: 0.5s;
+  transition-delay:1.05s ;
+
+}
+
+.navbar-right a span{
+  position: absolute;
+  display: block;
+}
+#efectoT{
+  top:0;
+
+  left:-100%;
+  width: 100%;
+  height: 2px;
+  background:linear-gradient(90deg,transparent, white);
+
+}
+.navbar-right a:hover #efectoT{
+  left: 100%;
+  transition: 1s;
+
+
+}
+
+
+#efectoR{
+  right:0;
+
+  top:-100%;
+  height: 100%;
+  width: 2px;
+  background:linear-gradient(180deg,transparent, white);
+
+}
+.navbar-right a:hover #efectoR{
+  top:100%;
+  transition: 0.8s;
+  transition-delay: 0.25s;
+
+}
+
+#efectoB{
+  bottom:0;
+
+  right:-100%;
+  width: 100%;
+  height: 2px;
+  background:linear-gradient(270deg,transparent, white);
+
+}
+.navbar-right a:hover #efectoB{
+  right:100%;
+  transition: 0.8s;
+  transition-delay: 0.5s;
+
+}
+
+#efectoL{
+  left:0;
+
+  bottom:-100%;
+  height: 100%;
+  width: 2px;
+  background:linear-gradient(360deg,transparent, white);
+
+}
+.navbar-right a:hover #efectoL{
+  bottom:100%;
+  transition: 0.8s;
+  transition-delay: 0.75s;
+
+}
+
+/*cards*/
+
+.activities-section{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  height: 824px;
+  margin: 200px 0 0 0;
+  padding: 0;
+  background: linear-gradient(0deg, rgb(54, 14, 21,0.4) 10%,rgb(210, 2, 45,0.2),rgb(225, 0, 25,0.04));
+}
+.activities-section h1{
+margin: 0;
+margin-bottom: 56px;
+font-family: 'Gotham Rounded', sans-serif;
+color: #fff;
+font-weight: 300;
+font-size: 60px;
+letter-spacing: 0.3em;
+text-transform: uppercase;
+
+}
+.grid-activities{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr ;
+  width: 780px;
+  height: 500px;
+
+}
+.activities-cards{
+  align-items: center;
+  text-align: center;
+
+}
+.activities-cards p{
+  color: #fff;
+  margin: 4px 0;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+
+}
+.activities-cards img{
+  width: 166px;
+  height: 139px;
+  border-radius: 20px;
+}
+.activities-cards:hover img{
+  width: 192px;
+  height: 164px;
+  transition: 0.2s;
+}
+.activities-cards button{
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  border: none;
+  font-family: 'Raleway', sans-serif; 
+  color: rgb(253, 235, 249);
+  text-transform: uppercase;
+  font-weight: 550;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  margin-top: 6px;
+}
+.activities-cards button:hover{
+  padding: 7px;
+  background: rgba(255, 255, 255, 0.5);
+  transition: 0.2s;
+}
+
+/*info*/
+.info-container{
+  display: flex;
+  justify-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 560px;
+  padding:0;
+  margin: 0;
+
+
+}
+.info-img{
+  background: url(https://i0.wp.com/recreo.gob.ar/wp-content/uploads/2022/06/IMG-20220622-WA0030.jpg?fit=1368%2C912);
+  background-size: cover;
+  height: 100%;
+  width: 100%; 
+
+}
+.info-gradient{
+  background:  rgba(255, 255, 255, 0.78);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.info{
+  width: 30%;
+  align-self: center;
+  font-family: 'Gotham Rounded'
+
+}
+.info h1{
+  font-size: 2rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+.info p{
+   font-size: 1rem;
+      line-height: 1.2;
+      text-transform: uppercase;
+}
+.info a{
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: black;
+  border: 1px solid;
+  border-radius: 100px;
+  padding: 6px;
+}
+
+/*footer*/
+footer{
+  background: #669dd6;
+  width: 100%;
+  height: 300px;
+  position: absolute;}
+.footer-img{
+  width: 100%;
+  position: relative;
+  top: 5px;
+}
+footer div {
+  height: 40px;
+  background: linear-gradient(301deg, #d0082f,transparent)20%,rgb(22 22 22)100%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+footer div img{
+  width: 30px;
+  height: 30px;
+  margin-left: 6px;
+
+}
