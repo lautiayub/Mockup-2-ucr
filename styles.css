@@ -8,7 +8,9 @@
     /* font-family: 'Raleway', sans-serif;  */
     @import url('https://fonts.cdnfonts.com/css/gotham-rounded');
     /* font-family: 'Gotham Rounded', sans-serif; */
-                                                  
+.inactive{
+    display: none;
+}                                               
   
   body {
      width: 100%;
@@ -39,7 +41,6 @@
       justify-content: space-between;
       width: 100%;
       height: 50px;
-
       padding: 0;
       background: rgb(34, 119, 186, 0.95);
       box-sizing: border-box;
@@ -51,29 +52,16 @@
       align-items: center;
   }
   #img_logo_nav {
-    width: 100%;
+    /* width: 100%; */
     height: 96%;
       margin: 0 0 0px 5px;
   }
-  /* nav ul{
-      display: flex;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      align-items: center;
-      height: 80px;
+  nav ul{
+      display: none;
+
   
   }
-  .navbar-left li a{
-      text-decoration: none;
-      padding:20px;
-      color: white;
-  }
-  .navbar-left li a:hover{
-      background:rgba(255, 255, 255, 0.5);
-      border-radius: 2px;
-      color: rgb(61, 45, 45);
-  } */
+
   
   .navbar-right {
       display: flex; 
@@ -81,8 +69,8 @@
       /* margin-right: 25px;  */
       margin-right: 4px;
   
-  }
-  
+  } 
+
   .navbar-right a{
       text-decoration: none;
       font-size: 1rem;
@@ -199,7 +187,9 @@
   }
   .grid-activities{
       display: grid;
-      grid-template-columns: 1fr 1fr ;
+    
+      grid-template-columns:  repeat(auto-fill, 240px) ;
+      place-content: center;
       grid-template-rows: 1fr 1fr ;
       width: 80%;
       height: 70%;
@@ -223,11 +213,11 @@
       height: 50%;
       border-radius: 20px;
 }
-  /* .activities-cards:hover img{
+  .activities-cards:hover img{
       width: 192px;
       height: 164px;
       transition: 0.2s;
-  } */
+  }
   .activities-cards button{
       padding: 5px;
       background: rgba(255, 255, 255, 0.2);
@@ -326,5 +316,69 @@
       width: 2rem;
       height: 2rem;
       margin-left: 1rem;
+ }
+ 
+ /*Mobile*/
 
-  }
+.aside-mobile-left{
+    background-color:rgba(9, 81, 139, 0.973);
+    width: 100%;
+    height: 50%;
+    z-index: 2;
+    position: absolute;
+    top: -149px;
+
+}
+.aside-mobile-left ul {
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem;
+
+}
+.aside-mobile-left ul li{
+    padding: 0.5rem;
+} 
+.aside-mobile-left ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+  
+}
+ 
+ 
+ 
+ @media(min-width:919px){
+    nav ul{
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        
+    
+    }
+    .navbar-left li a{
+        text-decoration: none;
+        padding:12px;
+        color: white;
+    }
+    .navbar-left li a:hover{
+        background:rgba(255, 255, 255, 0.5);
+        border-radius: 2px;
+        color: rgb(61, 45, 45);
+    }
+    .activities-cards img{
+        width: 75%;
+    }
+    .grid-activities{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr  ;
+        grid-template-rows: 1fr 1fr ;
+        width: 90%;
+        height: 90%;
+        gap: 0.5rem;
+    }
+
+ }
+ /* @media(min-width:1200px){
+ } */
