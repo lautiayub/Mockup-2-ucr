@@ -51,6 +51,10 @@
       display: flex;
       align-items: center;
   }
+  /* .navbar-left ul li{
+  width: 120px;
+    margin: 0.5rem;
+} */
   #img_logo_nav {
     /* width: 100%; */
     height: 96%;
@@ -58,8 +62,6 @@
   }
   nav ul{
       display: none;
-
-  
   }
 
   
@@ -158,6 +160,26 @@
       transition-delay: 0.75s;
   
   }
+/*nav interactions*/
+
+.ul-nav-left li:nth-child(3),
+.ul-nav-left li:nth-child(4),
+.ul-nav-left li:nth-child(5){
+    position: relative;
+}
+.objectives--nav, 
+.membership--nav,
+.trip--nav{
+    /* display: flex;  */
+    position: absolute;
+    width: 100%;
+    padding: 0.3rem;
+    top: 50px;
+    background-color: aliceblue;
+    border-radius: 30px;
+}
+
+
 
   
   /****cards*****/
@@ -209,13 +231,13 @@
   
   }
   .activities-cards img{
-      width: 90%;
-      height: 50%;
+      width: 80%;
+      height: 60%;
       border-radius: 20px;
 }
   .activities-cards:hover img{
-      width: 192px;
-      height: 164px;
+      width: 84%;
+      height:64%;
       transition: 0.2s;
   }
   .activities-cards button{
@@ -367,15 +389,15 @@
         border-radius: 2px;
         color: rgb(61, 45, 45);
     }
+
     .activities-cards img{
         width: 75%;
     }
     .grid-activities{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr  ;
-        grid-template-rows: 1fr 1fr ;
-        width: 90%;
-        height: 90%;
+        width: 80%;
+        height: 80%;
         gap: 0.5rem;
     }
 
