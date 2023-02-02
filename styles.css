@@ -33,9 +33,10 @@
         z-index: -1;}
   
   /*nav*/
-  nav{
+  #navbar{
       position: fixed;
       top: 0;
+      transition:top 0.5s;
       left: 0;
       display: flex;
       justify-content: space-between;
@@ -167,10 +168,10 @@
 .ul-nav-left li:nth-child(5){
     position: relative;
 }
-.objectives--nav, 
-.membership--nav,
-.trip--nav{
-    /* display: flex;  */
+#objectives--nav, 
+#membership--nav,
+#trip--nav{
+
     position: absolute;
     width: 100%;
     padding: 0.3rem;
@@ -308,7 +309,7 @@
         line-height: 1.2;
         text-transform: uppercase;
   }
-  .info a{
+  .button-section{
       font-size: 1.4rem;
       text-decoration: none;
       color: black;
@@ -316,6 +317,13 @@
       border-radius: 100px;
       padding: 6px;
   }
+.button-section:hover{
+  background:#96ecfc;
+  color: white;
+
+}
+
+
   
   /*footer*/
   footer{
@@ -342,25 +350,26 @@
  
  /*Mobile*/
 
-.aside-mobile-left{
+#aside-mobile-left{
     background-color:rgba(9, 81, 139, 0.973);
     width: 100%;
-    height: 50%;
+    height: 100%;
     z-index: 2;
-    position: absolute;
-    top: -149px;
+    position: fixed;
+    top: 51px;
+    transition: 1s;
 
 }
-.aside-mobile-left ul {
+#aside-mobile-left ul {
     list-style: none;
     margin: 0;
     padding: 0.5rem;
 
 }
-.aside-mobile-left ul li{
+#aside-mobile-left ul li{
     padding: 0.5rem;
 } 
-.aside-mobile-left ul li a{
+#aside-mobile-left ul li a{
     text-decoration: none;
     color: #fff;
     font-size: 1.2rem;
@@ -368,7 +377,16 @@
 }
  
  
- 
+ @media(max-width:918px){
+    #img_logo_nav {
+        display: none;
+      }
+      #menu_logo_nav{
+        height: 70%;
+
+        margin: 0 0 0 5px;
+      }
+ }
  @media(min-width:919px){
     nav ul{
         display: flex;
@@ -381,7 +399,7 @@
     }
     .navbar-left li a{
         text-decoration: none;
-        padding:12px;
+        padding:12px 28px 12px 28px;
         color: white;
     }
     .navbar-left li a:hover{
@@ -399,6 +417,12 @@
         width: 80%;
         height: 80%;
         gap: 0.5rem;
+    }
+    #menu_logo_nav{
+        display: none;
+      }
+    #aside-mobile-left{
+        display: none;
     }
 
  }

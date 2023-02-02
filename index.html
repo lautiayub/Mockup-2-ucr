@@ -8,34 +8,35 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-
-    <nav>
+    
+    <nav id="navbar">
         <div class="navbar-left">
+            <img id="menu_logo_nav" src="https://img.icons8.com/ios-glyphs/256/menu-rounded.png" alt="">
             <img id="img_logo_nav" src="https://upload.wikimedia.org/wikipedia/commons/2/26/Ucr_modern_logo.png" alt="">
             <!-- <img id="img_logo_nav" src="https://ucr.org.ar/assets/front/images/layout/logo_texto.png" alt=""> -->
             <ul class="ul-nav-left">
                 <li>
-                    <a href="">¿Quienes Somos?</a>
+                    <a href="#info-container">¿Quienes Somos?</a>
                 </li>
                 <li>
-                    <a href="">Actividades</a>
+                    <a href="#activities-section">Actividades</a>
                 </li>
-                <li>
-                    <a href="">Objetivos</a>
-                    <div class="objectives--nav inactive" >
+                <li id="obj-li-nav">
+                    <a href="#">Objetivos</a>
+                    <div id="objectives--nav" class="inactive" >
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias deleniti blanditiis eos rerum. Impedit ad sed nisi, dicta minus enim accusamus</p>
                     </div>
                 </li>
-                <li>
-                    <a href="">¿Como afiliarme?</a>
-                    <div class="membership--nav inactive">
+                <li id="mem-li-nav">
+                    <a href="#">¿Como afiliarme?</a>
+                    <div id="membership--nav" class="inactive">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias deleniti blanditiis eos rerum. Impedit ad sed nisi, dicta minus enim accusamus</p>
                     </div> 
            
                 </li>
-                <li>
-                    <a href="">Viajes</a>
-                    <div class="trip--nav inactive">
+                <li id="trip-li-nav">
+                    <a href="#">Viajes</a>
+                    <div id="trip--nav" class="inactive">
                         <p>Para consultar por los viajes registrate y escribinos!</p>
                         <!-- <ul>
                             <li><a href="">Mendoza</a></li>
@@ -59,7 +60,7 @@
 
     </nav>
 
-    <div class="aside-mobile-left inactive">
+    <div id="aside-mobile-left" class="inactive">
         <ul>
             <li>
                 <a href="">¿Quienes Somos?</a>
@@ -82,7 +83,7 @@
             <li><a href="">Sign Out</a></li>
         </ul>
     </div>
-    <section class="activities-section">
+    <section class="activities-section" id="activities-section">
         <h1>Actividades</h1>
         <div class="grid-activities">
             <div class="activities-cards">
@@ -129,7 +130,7 @@
 
         </div>
     </section>
-    <section class="info-container">
+    <section class="info-container" id="info-container">
         <div class="info-img">
         <div class="info-gradient">
         <div class="info">
@@ -155,5 +156,6 @@
     </footer>
 
 
+    <script src="./main.js"></script>
 </body>
 </html>
