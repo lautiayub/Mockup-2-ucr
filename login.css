@@ -1,0 +1,357 @@
+:root{
+    --white:#FFFFFF;
+    --softwhite:rgba(255, 255, 255, 0.2);
+    --lowwhite:rgba(255, 255, 255, 0.5);
+    --black:#000000;
+    --redblack:rgb(37, 28, 28);
+    --blue: rgb(34, 119, 186,0.65);
+    --backblue:#669dd6;
+    --ligth-blue:#96ecfc;
+    --blue-rancio: #46a2fd;
+    --formal-font:'Raleway', sans-serif;
+    --informal-font:'Gotham Rounded', sans-serif;
+    --sm: 1rem;
+    --md: 1.4rem;
+    --lg: 2rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+body{
+    background-image: url(https://salta4400.com/wp-content/uploads/2019/05/radi-sii-2048x1288.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:fixed;
+    
+}
+main{
+    width: 100%;
+    margin: auto;
+    margin-top: 60px;
+}
+/***     nav      ***/
+.inactive{
+     display: none;
+} 
+nav{
+    position: fixed;
+    top: 0;
+    transition:top 0.5s;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    padding: 0;
+    background: var(--blue);
+    /* background-color: rgba(0, 0, 0, 0.65); */
+    box-sizing: border-box;
+    border-bottom: 1px solid #fff;
+    backdrop-filter: blur(12px);
+  }
+  
+  .navbar-left{
+      display: flex;
+      align-items: center;
+  }
+  nav ul{
+      display: none;
+  }
+  
+  
+  .navbar-right {
+      display: flex; 
+    align-items: center;
+    margin-right: 4px;
+
+  } 
+  
+  .navbar-right a{
+      text-decoration: none;
+      font-size: var(--sm);
+      color: var(--white);
+      padding: 7px;
+      transition: 0.2s;
+      position: relative;
+      overflow: hidden;
+  }
+  /*efectos*/
+  .navbar-right a:hover{
+      border: 1px solid white;
+      border-radius:9px;
+      padding: 12px;
+      transition: 0.5s;
+      transition-delay:1.05s ;
+      
+  }
+  
+  .navbar-right a span{
+      position: absolute;
+      display: block;
+  }
+  .efectoT{
+      top:0; 
+      left:-100%;
+      width: 100%;
+      height: 2px;
+      background:linear-gradient(90deg,transparent, white);
+      
+  }
+  .navbar-right a:hover .efectoT{
+      left: 100%;
+      transition: 1s;   
+  }
+  
+  
+  .efectoR{
+      right:0;
+      top:-100%;
+      height: 100%;
+      width: 2px;
+      background:linear-gradient(180deg,transparent, white);
+      
+  }
+  .navbar-right a:hover .efectoR{
+      top:100%;
+      transition: 0.8s;
+      transition-delay: 0.25s;
+    
+  }
+  
+  .efectoB{
+      bottom:0;
+      right:-100%;
+      width: 100%;
+      height: 2px;
+      background:linear-gradient(270deg,transparent, white);      
+  }
+.navbar-right a:hover .efectoB{
+    right:100%;
+    transition: 0.8s;
+    transition-delay: 0.5s; 
+  }
+  
+  .efectoL{
+      left:0;
+      bottom:-100%;
+      height: 100%;
+      width: 2px;
+      background:linear-gradient(360deg,transparent, white);  
+  }
+  .navbar-right a:hover .efectoL{
+      bottom:100%;
+      transition: 0.8s;
+      transition-delay: 0.75s;    
+  }
+/**  end nav  **/  
+
+ /*Mobile*/
+    
+ .aside-mobile-left{
+    background-color:rgba(9, 81, 139, 0.973);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    position: fixed;
+    top: 51px;
+    transition: 1s;
+    
+}
+.aside-mobile-left ul {
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem;
+    
+}
+.aside-mobile-left ul li{
+    padding: 0.5rem;
+} 
+.aside-mobile-left ul li a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.2rem;
+    
+}
+/* end mobile*/
+
+
+.contain_all{
+    width: 100%;
+    max-width: 800px;
+    margin: 250px auto 0 auto;
+    position: relative;
+}
+.back_box{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    background-color:rgb(34, 119, 186,0.3);;
+}
+.back_box div{
+    margin:100px 40px;
+    color:var(--white);
+    transition: all 500ms;
+}
+.back_box div p,
+.back_box div button{
+    margin-top:30px;
+}
+.back_box h3{
+    font-weight: 400;
+    font-size: 26px;
+}
+.back_box button{
+    padding: 10px 40px;
+    border: 2px solid white;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--white);
+    outline: none;
+    transition: all 300ms;
+}
+.back_box button:hover{
+    background-color:var(--white);
+    color:var(--backblue);
+}
+/*formularios*/
+.contain__login-register{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275) ;
+    
+}
+.contain__login-register form{
+    width: 100%;
+    padding: 80px 20px;
+    background:var(--white) ;
+    position: absolute;
+    border-radius: 20px;
+
+}
+.contain__login-register form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom:20px ;
+    color: var(--backblue);
+}
+.contain__login-register form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #f2f2f2;
+    outline: none;
+}
+.contain__login-register form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background:var(--backblue);
+    color:var(--white);
+    cursor: pointer;
+    outline: none;
+}
+.form__login {
+    opacity: 1;
+    display: block;
+}
+.form__register{
+    display: none;
+}
+
+/*responsive*/
+@media (max-width:918px) {
+    main{
+        margin-top: 50px;  
+    }
+    .back_box{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+    .back_box div{
+        margin: 0;
+        position: absolute;
+    }
+    /*Formulario*/
+    .contain__login-register{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+    .contain__login-register form{
+        position: relative;
+    }       
+    .img_logo_nav {
+        display: none;
+    }
+    .menu_logo_nav{
+        height: 70%;
+        margin: 0 0 0 5px;
+    }
+}
+@media(min-width:918px){
+    nav ul{
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+    .navbar-left li a{
+        text-decoration: none;
+        padding:12px 28px 12px 28px;
+        color:var(--white);
+    }
+    .navbar-left li a:hover{
+    background:var(--lowwhite);
+    border-radius: 6px;
+    color: var(--redblack);
+    }
+
+    .img_logo_nav {
+        height: 85%;
+        margin: 0 0 0px 5px;
+    }
+    .menu_logo_nav{
+    display: none;
+    }
+/*nav interactions*/
+
+.ul-nav-left li:nth-child(3),
+.ul-nav-left li:nth-child(4),
+.ul-nav-left li:nth-child(5){
+    position: relative;
+}
+.objectives--nav, 
+.membership--nav,
+.trip--nav{
+    position: absolute;
+    width: 100%;
+    padding: 0.3rem;
+    top: 50px;
+    background-color: aliceblue;
+    border-radius: 30px;
+}
+
+    .aside-mobile-left{
+    display: none;
+    }
+
+}

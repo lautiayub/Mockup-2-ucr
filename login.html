@@ -8,20 +8,92 @@
     <link rel="stylesheet" href="./login.css">
 </head>
 <body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <img class="menu_logo_nav" src="https://img.icons8.com/ios-glyphs/256/menu-rounded.png" alt="">
+            <img class="img_logo_nav" src="https://upload.wikimedia.org/wikipedia/commons/2/26/Ucr_modern_logo.png" alt="">
+            <ul class="ul-nav-left">
+                <li>
+                    <a href="#info-container">¿Quienes Somos?</a>
+                </li>
+                <li>
+                    <a href="#activities-section">Actividades</a>
+                </li>
+                <li class="obj-li-nav">
+                    <a href="#">Objetivos</a>
+
+                        <div class="objectives--nav inactive">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias deleniti blanditiis eos rerum. Impedit ad sed nisi, dicta minus enim accusamus</p>
+                        </div>
+
+                </li>
+                <li class="mem-li-nav">
+                    <a href="#">¿Como afiliarme?</a>
+                         <div class="membership--nav inactive" >
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias deleniti blanditiis eos rerum. Impedit ad sed nisi, dicta minus enim accusamus</p>
+                         </div> 
+           
+                </li>
+                <li class="trip-li-nav">
+                    <a href="#">Viajes</a>
+                    <div class="trip--nav inactive">
+                        <p>Para consultar por los viajes registrate y escribinos!</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <a href="/">
+                <span class="efectoT"></span>
+                <span class="efectoL"></span>
+                <span class="efectoB"></span>
+                <span class="efectoR"></span>
+                Inicio</a>
+
+        </div>
+
+    </nav>
     <main>
+        <div class="aside-mobile-left inactive">
+            
+            <ul>
+                <li>
+                    <a href="">¿Quienes Somos?</a>
+                </li>
+                <li>
+                    <a href="">Actividades</a>
+                </li>
+                <li>
+                    <a href="">Objetivos</a>
+                </li>
+                <li>
+                    <a href="">¿Como afiliarme?</a>
+                </li>
+                <li>
+                    <a href="">Viajes</a>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="">Email@gmail.com</a></li>
+                <li><a href="">Sign Out</a></li>
+            </ul>
+        </div>
         <div class="contain_all">
 
                     <div class="back_box">
-                        <h3>¿Ya tienes una cuenta?</h3>
-                        <p>Inicia sesión para entrar en la página</p>
-                        <button class="btn__login"> Iniciar Sesión</button>
+                        <div class="back_box-login">
+                            <h3>¿Ya tienes una cuenta?</h3>
+                            <p>Inicia sesión para entrar en la página</p>
+                            <button id="btn__login"> Iniciar Sesión</button>
+                        </div>
+                        <div class="back_box-register">
+                            <h3>¿Aún no tienes una cuenta?</h3>
+                            <p>Registrate para que puedas inciar sesión</p>
+                            <button id="btn__register">Registrate</button>
+                        </div>
                     </div>
                     
-                    <div class="back_box">
-                        <h3>¿Aún no tienes una cuenta?</h3>
-                        <p>Registrate para que puedas inciar sesión</p>
-                        <button class="btn__login">Registrate</button>
-                    </div>
+
                     <!-- Formulario de login y registro -->
                     <div class="contain__login-register">
                         <!-- login -->
@@ -44,6 +116,7 @@
 
         </div>
     </main>
-    
+    <script src="./login.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>
